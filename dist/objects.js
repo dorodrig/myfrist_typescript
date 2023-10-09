@@ -51,3 +51,17 @@ t4.distance = 15;
 console.log(t4);
 t4.comments = "It was a good training";
 console.log(t4.comments);
+const t5 = new Training3();
+t5.date = "2023-10-01";
+t5.comments = "It was a hard training";
+console.log(t5.comments);
+class Training4 {
+    constructor(type, distance, date, _comments) {
+        this.type = type;
+        this.distance = distance;
+        this.date = date;
+        this._comments = _comments;
+    }
+}
+const t6 = new Training4("LONG RUN", 32, "2023-10-09", "Goog training");
+console.log(t6);

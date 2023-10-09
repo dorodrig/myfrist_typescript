@@ -77,3 +77,28 @@ t4.distance=15;
 console.log(t4);
 t4.comments="It was a good training";
 console.log(t4.comments);
+
+const t5 = new Training3();
+// Modifica los valores de las propiedades
+t5.date = "2023-10-01";
+// Genera error
+//t5.type = "LONG RUN";
+
+t5.comments = "It was a hard training";
+console.log(t5.comments);
+
+// Declaración de clase con constructor y atributos definidos en el constructor
+class Training4 {
+  constructor(
+    readonly type: string,
+    public distance: number,
+    public date: string,
+    private _comments: string
+  ) {}
+}
+
+const t6 = new Training4("LONG RUN", 32, "2023-10-09", "Goog training");
+console.log(t6);
+
+// Genera error
+//t6.type = "INTERVALS";
